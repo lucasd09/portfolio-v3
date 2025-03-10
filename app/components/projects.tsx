@@ -75,11 +75,34 @@ export const Projects = () => {
 					]}
 				/>
 				<ProjectCard
+					title="Nest.js API Template"
+					description="Template for building APIs with Nest.js, with a generic repository implementation, speeding up development"
+					image="nestjs-template.png"
+					source="https://github.com/lucasd09/nestjs-template"
+					skills={["Nest.js", "DrizzleORM", "Passport"]}
+				/>
+				<ProjectCard
 					title="Bun API"
 					description="A API made from scratch with no other libs or frameworks besides built-in Bun Methods. It has every standard HTTP Methods and it was built for a cleaner and better Developer experience."
 					image="bun-api-display.jpg"
 					source="https://github.com/lucasd09/bun-api"
 					skills={["Bun", "DrizzleORM", "Typescript"]}
+				/>
+				<ProjectCard
+					title="Rooming List API"
+					description="An API made with Nest.js and Drizzle ORM. It lists roomings by their nearby events. It was made for a take home assignment"
+					image="rooming-list-api.png"
+					source="https://github.com/lucasd09/crewfare-rooming-list-api"
+					website="https://crewfare-rooming-list-api.onrender.com/api"
+					skills={["Nest.js", "DrizzleORM", "Typescript"]}
+				/>
+				<ProjectCard
+					title="Rooming List Panel"
+					description="Frontend for the Rooming List API. It lists roomings by their nearby events, filtering by status. It was made for a take home assignment"
+					image="rooming-list-panel.png"
+					source="https://github.com/lucasd09/crewfare-rooming-list-panel"
+					website="https://crewfare-rooming-list-panel.vercel.app/"
+					skills={["Next.js"]}
 				/>
 			</ul>
 
