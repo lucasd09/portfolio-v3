@@ -19,6 +19,26 @@ export const WorkExperienceTab = () => (
 	<motion.div variants={containerVariants} initial="hidden" animate="visible">
 		<Timeline>
 			<TimelineItem
+				imageSrc="swizzle-ai.jpeg"
+				imageAlt="Company logo"
+				start="May 2025"
+				end="Current"
+				title="Swizzle AI"
+				subtitle="Frontend Engineer"
+			>
+				<TimelineListItem>
+					Led the frontend development of a B2C platform for building and deploying AI-powered tools,
+					leveraging React.js and TypeScript to deliver a scalable, responsive, and intuitive user interface.
+				</TimelineListItem>
+				<TimelineListItem>
+					Leveraged expertise in responsive design to create intuitive, accessible interfaces across devices.
+					Collaborated closely with backend teams to integrate RESTful APIs efficiently, ensuring fast and reliable data flow.
+					Played a key role in translating complex AI-driven functionality into user-friendly workflows, aligning technical
+					implementation with business and user needs.
+				</TimelineListItem>
+			</TimelineItem>
+
+			<TimelineItem
 				imageSrc="harmonit-logo.jpeg"
 				imageAlt="Company logo"
 				start="Nov 2023"
