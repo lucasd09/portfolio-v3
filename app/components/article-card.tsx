@@ -14,8 +14,8 @@ interface ArticleCardProps {
 export const ArticleCard = ({ title, description, image, link, date, readTime }: ArticleCardProps) => {
   return (
     <li className="col-span-1">
-      <Card className="flex-row items-center">
-        <img src={image} alt={title} className="object-cover h-[125px] ml-4" />
+      <Card className="flex-col sm:flex-row items-center">
+        <img src={image} alt={title} className="object-cover sm:h-[125px] sm:ml-4 rounded-t-xl sm:rounded-none" />
         <div>
           <CardHeader>
             <CardTitle>{title}</CardTitle>

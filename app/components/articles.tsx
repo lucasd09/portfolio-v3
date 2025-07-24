@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { ArticleCard } from "./article-card";
+import { useMobile } from "@/lib/use-mobile";
 export const Articles = () => {
   const [isShowingAll, setIsShowingAll] = useState(false);
   const [fullHeight, setFullHeight] = useState(0);
+  const isMobile = useMobile()
 
   const ulRef = useRef<HTMLUListElement>(null);
 
@@ -22,6 +24,8 @@ export const Articles = () => {
 
     setFullHeight(ulRef.current.scrollHeight);
   }, []);
+
+  const currentHeight = isShowingAll ? fullHeight : isMobile ? 400 : 225
 
   return (
     <section className="my-12">
@@ -38,7 +42,7 @@ export const Articles = () => {
         ref={ulRef}
         className="grid grid-cols-1 gap-4 overflow-hidden transition-[height] animate-in fade-in-0 duration-200"
         style={{
-          height: isShowingAll ? fullHeight : 225,
+          height: currentHeight,
         }}
       >
         <ArticleCard
@@ -51,7 +55,7 @@ export const Articles = () => {
         />
       </ul>
 
-      <div className="flex items-center justify-center mx-2 mt-4 hidden">
+      <div className="items-center justify-center mx-2 mt-4 hidden">
         <Button variant="ghost" className="group" onClick={toggleShowAll}>
           {isShowingAll ? (
             <>
