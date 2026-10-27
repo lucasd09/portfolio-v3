@@ -1,5 +1,5 @@
 import "./globals.css";
-import { metadataConfig } from "@/lib/seo";
+import { metadataConfig, viewportConfig } from "@/lib/seo";
 import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { PropsWithChildren } from "react";
@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = metadataConfig;
+export const viewport = viewportConfig;
 
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (

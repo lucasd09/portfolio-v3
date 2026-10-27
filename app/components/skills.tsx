@@ -1,23 +1,16 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
-const skills: string[] = [
-	"TypeScript",
-	"JavaScript",
-	"React",
-	"NextJS",
-	"TailwindCSS",
-	"NestJS",
-	"NodeJS",
-	"Postgres",
-	"MySQL",
-	"CI/CD",
-	"Pipelines",
-	"Docker",
-	"Git",
-	"Cloud Solutions (AWS, Oracle, Azure)",
+const groups = [
+	{
+		label: "Paid production",
+		text: "TypeScript, JavaScript, React, Tailwind CSS, Git, CI/CD, REST APIs, Delphi, PascalScript.",
+	},
+	{
+		label: "Production personal project",
+		text: "TanStack Start, SQLite, and full-stack TypeScript deployed to a VPS.",
+	},
 ];
 
 export const Skills = () => {
@@ -31,11 +24,12 @@ export const Skills = () => {
 			>
 				Skills
 			</motion.h4>
-			<div className="flex gap-2 flex-wrap animate-in fade-in-0 duration-200">
-				{skills.map((skill) => (
-					<Badge key={skill} variant="secondary" className="px-3 py-1">
-						{skill}
-					</Badge>
+			<div className="space-y-3 animate-in fade-in-0 duration-200">
+				{groups.map((group) => (
+					<p key={group.label} className="text-sm leading-relaxed">
+						<span className="font-semibold text-foreground">{group.label}.</span>{" "}
+						{group.text}
+					</p>
 				))}
 			</div>
 		</section>

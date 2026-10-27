@@ -53,7 +53,9 @@ export const TimelineItem = ({
 
 				{!!title && <h2 className="font-semibold leading-none">{title}</h2>}
 				<p className="text-sm text-muted-foreground">{subtitle}</p>
-				<ul className="ml-4 list-outside list-disc">{children}</ul>
+				{children ? (
+					<ul className="ml-4 list-outside list-disc">{children}</ul>
+				) : null}
 			</div>
 		</li>
 	);

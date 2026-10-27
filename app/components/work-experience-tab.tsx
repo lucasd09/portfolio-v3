@@ -19,107 +19,105 @@ export const WorkExperienceTab = () => (
 	<motion.div variants={containerVariants} initial="hidden" animate="visible">
 		<Timeline>
 			<TimelineItem
-				imageSrc="swizzle-ai.jpeg"
-				imageAlt="Company logo"
-				start="May 2025"
-				end="Current"
-				title="Swizzle AI"
-				subtitle="Frontend Engineer"
+				imageSrc="crewfare-logo.jpg"
+				imageAlt="Crewfare logo"
+				start="October 2025"
+				end="present"
+				title="Crewfare"
+				subtitle="Software Engineer"
 			>
 				<TimelineListItem>
-					Led the frontend development of a B2C platform for building and deploying AI-powered tools,
-					leveraging React.js and TypeScript to deliver a scalable, responsive, and intuitive user interface.
+					Build the frontend of Spotlight, Crewfare&apos;s newest product, as
+					one of three frontend engineers on the team that built the v1 product
+					from scratch with TanStack Start, React, TypeScript, and Tailwind
+					CSS.
 				</TimelineListItem>
 				<TimelineListItem>
-					Leveraged expertise in responsive design to create intuitive, accessible interfaces across devices.
-					Collaborated closely with backend teams to integrate RESTful APIs efficiently, ensuring fast and reliable data flow.
-					Played a key role in translating complex AI-driven functionality into user-friendly workflows, aligning technical
-					implementation with business and user needs.
+					Make major contributions to the project&apos;s standalone
+					design-system repository.
+				</TimelineListItem>
+			</TimelineItem>
+
+			<TimelineItem
+				imageSrc="mindcloud-logo.jpg"
+				imageAlt="MindCloud logo"
+				start="August 2025"
+				end="October 2025"
+				title="MindCloud"
+				subtitle="Integrator"
+			>
+				<TimelineListItem>
+					Built customer workflows on the company&apos;s proprietary platform,
+					connecting systems such as ERPs and e-commerce platforms.
+				</TimelineListItem>
+			</TimelineItem>
+
+			<TimelineItem
+				imageSrc="swizzle-ai.jpeg"
+				imageAlt="Swizzle AI logo"
+				start="May 2025"
+				end="September 2025"
+				title="Swizzle AI"
+				subtitle="Frontend Engineer (part-time)"
+			>
+				<TimelineListItem>
+					Developed the frontend of a B2C platform for building and deploying
+					AI-powered tools, in collaboration with another developer.
 				</TimelineListItem>
 			</TimelineItem>
 
 			<TimelineItem
 				imageSrc="harmonit-logo.jpeg"
-				imageAlt="Company logo"
-				start="Nov 2023"
-				end="Oct 2024"
+				imageAlt="Harmonit logo"
+				start="November 2023"
+				end="October 2024"
 				title="Harmonit"
 				subtitle="Software Engineer"
 			>
 				<TimelineListItem>
-					Implemented new features and optimizations to the ERP system,
-					resulting in a better UI for the customers.
-				</TimelineListItem>
-				<TimelineListItem>
-					Enhanced user interface performance by 40% through the implementation
-					of React, TypeScript, TailwindCSS, and various UI tools, resulting in
-					improved user satisfaction and engagement.
-				</TimelineListItem>
-				<TimelineListItem>
-					Applied agile methodologies to plan and manage sprints, ensuring all
-					tasks are completed efficiently and aligned with project objectives.
+					Implemented and optimized ERP interfaces using React, TypeScript,
+					Tailwind CSS, and related UI tools.
 				</TimelineListItem>
 			</TimelineItem>
 
 			<TimelineItem
 				imageSrc="frg-logo.jpeg"
-				imageAlt="Company logo"
-				start="Aug 2022"
-				end="Nov 2023"
-				title="FRG Informática"
+				imageAlt="FRG Gestão Inteligente logo"
+				start="August 2022"
+				end="November 2023"
+				title="FRG Gestão Inteligente"
 				subtitle="Software Engineer"
 			>
 				<TimelineListItem>
-					Developed a desktop ERP application for over 10,000 users using
-					Delphi/Pascalscipt, organizing the operation with Agile methodology.
+					Served as the primary developer for the Mosaic legacy ERP: planned
+					and maintained it, implemented features, and made technical direction
+					decisions.
 				</TimelineListItem>
-				<TimelineListItem>
-					Refactored every module, aiming for a better code structure, therefore
-					improving resource usage in most of the pages, resulting in enhanced
-					application performance and user satisfaction.
-				</TimelineListItem>
-				<TimelineListItem>
-					Mentored and guided a team of 2 developers, resulting in a improvement
-					in code quality, leading to a more efficient and seamless project
-					delivery process.
-				</TimelineListItem>
+				<TimelineListItem>Mentored one developer.</TimelineListItem>
 			</TimelineItem>
 
 			<TimelineItem
-				start="Nov 2021"
-				end="Aug 2022"
+				imageSrc="frg-logo.jpeg"
+				imageAlt="FRG Gestão Inteligente logo"
+				start="November 2021"
+				end="July 2022"
+				title="FRG Gestão Inteligente"
 				subtitle="Trainee Developer"
-			>
-				<TimelineListItem>
-					Worked on legacy systems, using Delphi as the main Framework.
-				</TimelineListItem>
-				<TimelineListItem>
-					Managed tasks in kanban methods using Redmine and Trello, utilizing
-					Git for version control to maintain the legacy product.
-				</TimelineListItem>
-				<TimelineListItem>
-					Collaborated with team members to troubleshoot and debug code,
-					ensuring seamless functionality of software applications.
-				</TimelineListItem>
-			</TimelineItem>
+			/>
+
 			<TimelineItem
 				imageSrc="dsin-logo.jpg"
-				imageAlt="Company logo"
-				start="Jan 2020"
-				end="Nov 2020"
-				title="DSIN - Solutions"
-				subtitle="Trainee Developer"
+				imageAlt="DSIN Solutions logo"
+				start="January 2020"
+				end="November 2020"
+				title="DSIN Solutions"
+				subtitle="Trainee Developer (internship)"
 			>
 				<TimelineListItem>
-					Mastered Git, CI/CD and the fundamentals of team development.
+					Worked on the SGIT legacy system with Delphi.
 				</TimelineListItem>
 				<TimelineListItem>
-					Worked on a legacy system called SGIT, using Delphi as the main
-					Framework.
-				</TimelineListItem>
-				<TimelineListItem>
-					Strengthened interpersonal skills through active participation in team
-					meetings, enabling smoother project workflows within a 2-month period.
+					Learned team development, Git, and CI/CD practices.
 				</TimelineListItem>
 			</TimelineItem>
 		</Timeline>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 const siteUrl = "https://lucas-dalan-portfolio.vercel.app/";
 
@@ -7,9 +7,8 @@ const name = "Lucas Dalan";
 const SEOConfig = {
 	siteName: `${name} - Portfolio`,
 	description:
-		"Professional portfolio showcasing my work in web development, including projects in React, Next.js, and more.",
+		"AI-enabled Frontend Engineer specializing in TypeScript and React, with experience delivering greenfield products, design systems, AI-powered interfaces, ERP systems, integrations, and production full-stack tools.",
 	siteUrl,
-	twitterHandle: "@lucasdalan",
 	imageUrl: `${siteUrl}portfolio-display.png`,
 	ogType: "website",
 };
@@ -32,11 +31,9 @@ export const metadataConfig: Metadata = {
 		},
 	},
 	keywords: [
-		"web developer",
-		"software engineer",
-		"full-stack developer",
-		"React developer",
-		"Next.js",
+		"AI-enabled Frontend Engineer",
+		"TypeScript",
+		"React",
 		name,
 		"portfolio",
 	],
@@ -78,15 +75,14 @@ export const metadataConfig: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		site: SEOConfig.twitterHandle,
-		creator: SEOConfig.twitterHandle,
 		title: SEOConfig.siteName,
 		description: SEOConfig.description,
 		images: [SEOConfig.imageUrl],
 	},
-	viewport: {
-		width: "device-width",
-		initialScale: 1,
-		maximumScale: 1,
-	},
+};
+
+export const viewportConfig: Viewport = {
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 1,
 };

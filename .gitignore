@@ -15,3 +15,6 @@
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Rendered public CV. It contains the professional email and stays outside Git.
+/public/lucas-dalan-resume.pdf
