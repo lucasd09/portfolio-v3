@@ -32,6 +32,9 @@ importers:
       next-themes:
         specifier: ^0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      pdfkit:
+        specifier: ^0.20.2
+        version: 0.20.2
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -57,9 +60,6 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.0.2(@types/react@19.0.2)
-      pdfkit:
-        specifier: ^0.20.2
-        version: 0.20.2
       postcss:
         specifier: ^8
         version: 8.4.49

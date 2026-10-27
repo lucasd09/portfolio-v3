@@ -1,11 +1,8 @@
 import { execFileSync } from "node:child_process";
 import { createWriteStream, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
-import { createRequire } from "node:module";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-
-const require = createRequire(import.meta.url);
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const sourcePath = join(root, "content", "public-cv.md");
@@ -230,7 +227,8 @@ const parseBlocks = (source) => {
 };
 
 const renderWithPdfKit = async () => {
-	const PDFDocument = require("pdfkit");
+	const pdfkit = await import("pdfkit");
+	const PDFDocument = pdfkit.default;
 	const doc = new PDFDocument({
 		size: "LETTER",
 		margins: { top: 50, bottom: 50, left: 54, right: 54 },
